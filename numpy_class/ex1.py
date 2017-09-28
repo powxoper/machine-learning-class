@@ -13,7 +13,7 @@ As a quiz, this about what we've just found (in terms of linear algebra)
 '''
 
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 A = np.array([[0.3, 0.6, 0.1], [0.5, 0.2, 0.3], [0.4, 0.1, 0.5]])
     
@@ -24,7 +24,9 @@ for x in range(0, 25):
      Vdel = V.dot(A)
      y = np.append(y, np.linalg.norm(Vdel - V))
      V = Vdel
-     
+
+x = np.linspace(0, 25, 25)
+
 plt.plot(x, y)
 plt.show()
      
