@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 
 A = np.array([[0.3, 0.6, 0.1], [0.5, 0.2, 0.3], [0.4, 0.1, 0.5]])
     
-V = np.array([0.25, 0.25, 0.5])
+V = np.array([0.33, 0.33, 0.34])
 
 y = np.array([])
 for x in range(0, 25):
@@ -29,4 +29,9 @@ x = np.linspace(0, 25, 25)
 
 plt.plot(x, y)
 plt.show()
+
+'''
+    If |v' - v| = 0, then v' = v = vA
+    We've found the eigenvector for A for which the corresponding eigenvalue is 1!
+    '''
      
