@@ -21,9 +21,9 @@ y = np.sum(x, axis = 0)
 
 
 
-print('The mean of gaussian distribution is: {0}'.format(y.mean()))
-print('The variance of gaussian distribution is: {0}'.format(y.var()))
-print('The standard deviation of gaussian distribution is: {0}'.format(y.std()))
+print('mean of gaussian distribution: {0}'.format(y.mean()))
+print('variance of gaussian distribution: {0}'.format(y.var()))
+print('standard deviation of gaussian distribution: {0}'.format(y.std()))
 
 
 plt.hist(y,bins = 100)
