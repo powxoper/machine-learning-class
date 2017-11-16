@@ -19,6 +19,10 @@ imgarray = csv_file.loc[0,:].as_matrix().reshape(28,28)
 #rotate_img = ndimage.rotate(imgarray, -90)
 rotate_img = np.rot90(imgarray,3)
 
-#plt.imshow(imgarray, cmap = 'gray')
+plt.subplot(1, 2, 1)
+plt.imshow(imgarray, cmap = 'gray')
+
+
+plt.subplot(1, 2, 2)
 plt.imshow(rotate_img, cmap = 'gray')
 plt.show()
