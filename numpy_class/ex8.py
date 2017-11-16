@@ -34,6 +34,7 @@ spiral = np.asarray(getCoordinates(theta, r)) + noise
 spirals = spiral
 colors = np.full(N, fill_value = 'darkblue')
 
+# generate all spirals and colors array
 for i in range(1,6):
     spirals = np.concatenate((spirals, np.asarray(getCoordinates(theta + i * np.pi / 3, r)) + noise), axis=1)
     if i % 2 == 1:
@@ -41,7 +42,7 @@ for i in range(1,6):
     else:
         colors = np.append(colors, np.full(N, fill_value = 'darkblue'))
 
-#
+# plot
 plt.scatter(spirals[0,:],spirals[1,:], c = colors, alpha = 0.5)
 plt.axis('equal')
 plt.show()
