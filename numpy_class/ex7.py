@@ -16,7 +16,7 @@ def getCoordinates(theta, r):
 N = 500
 
 # generate float theta randomly(0 <= r < 360)
-theta = np.random.random(N) * 360
+theta = np.random.random(N) * np.pi * 2
 
 noise = np.random.normal(0, 1, N)
 
