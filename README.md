@@ -1,4 +1,4 @@
-Exercises of 
+Solutions of exercises of 
 
 Deep Learning Prerequisites: The Numpy Stack in Python
 
